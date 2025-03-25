@@ -2,3 +2,5 @@
 node_modules
 .qodo
 /storybook-static
+.loki/report.html
+.loki/report.json
