@@ -8,8 +8,10 @@ import { AppRouter } from 'app/providers/router';
 function App() {
   const { theme } = useTheme();
 
+  document.body.className = theme;
+
   return (
-    <div className={classNames('app', {}, [theme])}>
+    <div className={classNames('app', {}, [])}>
       <Suspense fallback="">
         <Navbar />
         <div className="content-page">
@@ -17,7 +19,6 @@ function App() {
           <AppRouter />
         </div>
       </Suspense>
-
     </div>
   );
 }
